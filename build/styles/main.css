@@ -27,14 +27,12 @@
 body {
   background-color: var(--primary-bg);
   color: var(--primary-text);
-  font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
   margin: 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 0;
   width: 80px;
 }
 
@@ -48,7 +46,7 @@ img {
 /* Botões */
 .nav-item a {
   display: inline-block;
-  border-radius: 100px;
+  border: none;
   background-color: var(--button-bg);
   color: var(--button-text);
   padding: 10px 20px;
