@@ -13,195 +13,176 @@
 /* === Menu de Navegação === */
 /* Breakpoints */
 /* Estilos Globais */
+/* === Paleta de Cores === */
+:root {
+  --primary-bg: hsl(242, 61%, 8%);
+  --primary-text: #fc2f70;
+  --secondary-text: #ffffff;
+  --button-bg: #fc2f70;
+  --button-hover-bg: #6b6b6b;
+  --button-text: #ffffff;
+}
+
+/* === Estilos Globais === */
 body {
-  background-color: hsl(242, 61%, 8%);
-  color: #fc2f70;
-  /* Corrigi a referência para o nome correto */
-  font-family: url("/font/BaketFashion-DemoVersion-Regular.otf"), sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
+  margin: 0;
 }
-body img {
+
+img {
   text-align: center;
+  max-width: 100%;
+  height: auto;
 }
-   .container-fluid{
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            padding: 8px;
-        }
+
+/* Container */
+.container-fluid {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 8px;
+}
+
 /* Botões */
 .nav-item a {
-  display: grid;
+  display: inline-block;
   border-radius: 100px;
-  background-color: #fc2f70;
-  color: #ffff;
-  transition: background-color 0.1s ease-in-out;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
 }
+
 .nav-item a:hover {
-  background-color: #6b6b6b;
+  background-color: var(--button-hover-bg);
 }
+
+/* Menu de Navegação */
 .nav-link {
   display: flex;
-  /* Transformar o link em um contêiner flex */
   justify-content: center;
-  /* Centraliza o conteúdo horizontalmente */
   align-items: center;
-  /* Centraliza o conteúdo verticalmente */
   width: 60px;
-  /* Ajuste a largura conforme necessário */
   height: 60px;
-  /* Ajuste a altura conforme necessário */
 }
-/* Estilo dos ícones nos botões */
+
 .nav-link i {
-  display: block;
-  /* Certifique-se de que o ícone seja um bloco */
   font-size: 24px;
-  /* Tamanho do ícone */
-  margin: 0;
-  /* Remover qualquer margem padrão */
 }
-i {
-  display: flex;
-}
-left .nav-tabs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-items: center;
-}
-.nav-tabs li {
-  margin: 36px;
-}
-/* Contêiner principal */
+
+/* Layout */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
+
 header {
   text-align: center;
 }
-/* Estilo da imagem */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0;
-  width: 80px;
-}
+
 /* Navbar */
-.navbar-expand-lg .navbar-toggler {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .navbar-nav {
   margin: 0 auto;
-  /* Centraliza o nav */
-  text-align: center;
 }
- .nav-link:hover {
+
+.nav-link:hover {
   background-color: rgb(53, 7, 161);
   color: rgb(161, 206, 1);
-  transform: scale(1.1); /* Aumenta ligeiramente o tamanho do link */
+  transform: scale(1.1);
 }
+
 /* Estilos do Menu Responsivo */
 .collapse.navbar-collapse {
-  justify-content: end;
+  justify-content: flex-end;
 }
+
+@media (max-width: 1024px) {
+  .nav-item a {
+    width: 50px;
+    padding: 8px 16px;
+  }
+
+  .nav-link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-tabs li {
+    margin: 20px;
+  }
+
+  .balls {
+    width: 8em;
+  }
+
+  .balls div {
+    width: 0.6em;
+    height: 0.6em;
+  }
+}
+
 @media (max-width: 767px) {
-  .collapse.navbar-collapse {
-    margin-rigth: -25%;
-    /* Ajustar conforme necessário */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .nav-item a {
     width: 100%;
+    text-align: center;
   }
 }
-/* Estilo dos ícones de navegação */
-.nav-link i {
-  margin-right: 16px;
-  /* Ajuste a margem conforme necessário */
-}
-/* Estilos de Cabeçalhos */
-h1 {
-  font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
-  font-size: 56px;
-  font-weight: bold;
-  border-radius: 50px;
-  margin: 8px;
-}
-/* Definição da fonte personalizada */
-@font-face {
-  font-family: 'BaketFashion-DemoVersion-Regular';
-  src: url('/font/BaketFashion-DemoVersion-Regular.otf') format('truetype');
-  font-style: normal;
-}
-/* Subtítulo */
-h2 {
-  font-size: 16px;
-  margin-top: 1px;
-  margin-bottom: 50px;
-  color: #ffffff;
-}
-/* Layout de linhas */
-.row {
-  padding: 36px;
-  flex-wrap: wrap;
-  gap: 16px;
-  display: flex;
-}
-/* Estilo do slogan */
-.TextSlogan {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #ffffff;
-  font-size: 56px;
-}
-/* Animação das "bolas" */
-.balls {
-  width: 10em;
-  display: inline-flex;
-  flex-flow: nowrap;
-  justify-content: center;
-}
-.balls div {
-  width: 0.8em;
-  height: 0.8em;
-  border-radius: 50%;
-  background-color: #fc2f70;
-}
-.balls div:nth-of-type(1) {
-  transform: translateX(-100%);
-  animation: left-swing 0.5s ease-in alternate infinite;
-}
-.balls div:nth-of-type(3) {
-  transform: translateX(-95%);
-  animation: right-swing 0.5s ease-out alternate infinite;
-}
-/* Animação das bolas */
-@keyframes left-swing {
-  50%,
-  100% {
-    transform: translateX(95%);
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .nav-tabs li {
+    margin: 10px;
+  }
+
+  .balls {
+    width: 6em;
+  }
+
+  .balls div {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  .TextSlogan {
+    font-size: 24px;
+  }
+
+  .nav-item a {
+    padding: 5px 10px;
   }
 }
-@keyframes right-swing {
-  50% {
-    transform: translateX(-95%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-/* Estilo do rodapé */
+
+/* Rodapé */
 footer {
   background-color: #f0f0f0;
   padding: 18px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  height:auto;
 }
-/* Parágrafos no rodapé */
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 footer p {
   margin: 0;
   font-size: 16px;
