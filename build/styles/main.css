@@ -126,19 +126,19 @@ header {
   justify-content: flex-end;
 }
 
+/* === Media Queries para responsividade === */
 @media (max-width: 1024px) {
-  .nav-item a {
-    width: 50px;
-    padding: 8px 16px;
+  h1 {
+    font-size: 32px; /* Reduz o tamanho do título */
+  }
+
+  h2 {
+    font-size: 14px;
   }
 
   .nav-link {
     width: 50px;
     height: 50px;
-  }
-
-  .nav-tabs li {
-    margin: 20px;
   }
 
   .balls {
@@ -151,30 +151,23 @@ header {
   }
 }
 
-@media (max-width: 767px) {
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
+@media (max-width: 768px) {
   .nav-item a {
     width: 100%;
-    text-align: center;
+    padding: 8px;
+    text-align: center; /* Centraliza o texto nos links */
   }
-}
 
-@media (max-width: 576px) {
+  .nav-link i {
+    font-size: 22px; /* Ajuste o tamanho do ícone */
+  }
+
   h1 {
-    font-size: 36px;
+    font-size: 28px; /* Reduz ainda mais o título */
   }
 
-  .nav-tabs li {
-    margin: 10px;
+  h2 {
+    font-size: 12px;
   }
 
   .balls {
@@ -189,11 +182,39 @@ header {
   .TextSlogan {
     font-size: 24px;
   }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 5px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
 
   .nav-item a {
     padding: 5px 10px;
   }
+
+  h1 {
+    font-size: 24px; /* Diminui ainda mais o tamanho do h1 */
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  .TextSlogan {
+    font-size: 18px;
+  }
 }
+
 
 /* Rodapé */
 footer {
