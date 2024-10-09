@@ -1,0 +1,198 @@
+/* === Paleta de Cores === */
+/* Cor de fundo principal */
+/* Cor de texto principal */
+/* Cor de texto secundário */
+/* Cor de fundo dos botões */
+/* Cor de fundo dos botões ao passar o mouse */
+/* Cor do texto nos botões */
+/* === Tipografia === */
+/* Fonte principal do texto */
+/* Fonte do slogan */
+/* === Estilos Globais === */
+/* === Botões === */
+/* === Menu de Navegação === */
+/* Breakpoints */
+/* Estilos Globais */
+body {
+  background-color: hsl(242, 61%, 8%);
+  color: #fc2f70;
+  /* Corrigi a referência para o nome correto */
+  font-family: url("/font/BaketFashion-DemoVersion-Regular.otf"), sans-serif;
+}
+body img {
+  text-align: center;
+}
+/* Botões */
+.nav-item a {
+  display: grid;
+  border-radius: 100px;
+  background-color: #fc2f70;
+  color: #ffff;
+  transition: background-color 0.1s ease-in-out;
+}
+.nav-item a:hover {
+  background-color: #6b6b6b;
+}
+.nav-link {
+  display: flex;
+  /* Transformar o link em um contêiner flex */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+  width: 60px;
+  /* Ajuste a largura conforme necessário */
+  height: 60px;
+  /* Ajuste a altura conforme necessário */
+}
+/* Estilo dos ícones nos botões */
+.nav-link i {
+  display: block;
+  /* Certifique-se de que o ícone seja um bloco */
+  font-size: 24px;
+  /* Tamanho do ícone */
+  margin: 0;
+  /* Remover qualquer margem padrão */
+}
+i {
+  display: flex;
+}
+left .nav-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-items: center;
+}
+.nav-tabs li {
+  margin: 36px;
+}
+/* Contêiner principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+header {
+  text-align: center;
+}
+/* Estilo da imagem */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  width: 80px;
+}
+/* Navbar */
+.navbar-expand-lg .navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  margin: 0 auto;
+  /* Centraliza o nav */
+  text-align: center;
+}
+/* Estilos do Menu Responsivo */
+.collapse.navbar-collapse {
+  justify-content: end;
+}
+@media (max-width: 767px) {
+  .collapse.navbar-collapse {
+    margin-rigth: -25%;
+    /* Ajustar conforme necessário */
+    width: 100%;
+  }
+}
+/* Estilo dos ícones de navegação */
+.nav-link i {
+  margin-right: 16px;
+  /* Ajuste a margem conforme necessário */
+}
+/* Estilos de Cabeçalhos */
+h1 {
+  font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  border-radius: 50px;
+  margin: 8px;
+}
+/* Definição da fonte personalizada */
+@font-face {
+  font-family: 'BaketFashion-DemoVersion-Regular';
+  src: url('/font/BaketFashion-DemoVersion-Regular.otf') format('truetype');
+  font-style: normal;
+}
+/* Subtítulo */
+h2 {
+  font-size: 16px;
+  margin-top: 1px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+/* Layout de linhas */
+.row {
+  padding: 36px;
+  flex-wrap: wrap;
+  gap: 16px;
+  display: flex;
+}
+/* Estilo do slogan */
+.TextSlogan {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffffff;
+  font-size: 56px;
+}
+/* Animação das "bolas" */
+.balls {
+  width: 10em;
+  display: inline-flex;
+  flex-flow: nowrap;
+  justify-content: center;
+}
+.balls div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #fc2f70;
+}
+.balls div:nth-of-type(1) {
+  transform: translateX(-100%);
+  animation: left-swing 0.5s ease-in alternate infinite;
+}
+.balls div:nth-of-type(3) {
+  transform: translateX(-95%);
+  animation: right-swing 0.5s ease-out alternate infinite;
+}
+/* Animação das bolas */
+@keyframes left-swing {
+  50%,
+  100% {
+    transform: translateX(95%);
+  }
+}
+@keyframes right-swing {
+  50% {
+    transform: translateX(-95%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* Estilo do rodapé */
+footer {
+  background-color: #f0f0f0;
+  padding: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* Parágrafos no rodapé */
+footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
