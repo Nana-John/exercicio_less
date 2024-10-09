@@ -81,7 +81,7 @@ img {
 }
 h1 {
   font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: bold;
   border-radius: 50px;
   margin: 8px;
@@ -94,11 +94,20 @@ h1 {
 }
 /* Subtítulo */
 h2 {
+  font-family: 'roboto', sans-serif;
   font-size: 16px;
   margin-top: 1px;
   margin-bottom: 50px;
   color: #ffffff;
 }
+
+p {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  ont-size: 56px;
+}
+
 header {
   text-align: center;
 }
