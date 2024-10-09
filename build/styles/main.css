@@ -95,6 +95,11 @@ img {
   /* Centraliza o nav */
   text-align: center;
 }
+ .nav-link:hover {
+  background-color: rgb(53, 7, 161);
+  color: rgb(161, 206, 1);
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho do link */
+}
 /* Estilos do Menu Responsivo */
 .collapse.navbar-collapse {
   justify-content: end;
