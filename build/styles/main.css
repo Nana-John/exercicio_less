@@ -22,6 +22,15 @@ body {
 body img {
   text-align: center;
 }
+p {
+  font-family: 'StretchPro';
+}
+/* Definição da fonte personalizada */
+@font-face {
+  font-family: 'StretchPro';
+  src: url('/font/StretchPro.otf') format('truetype');
+  font-style: normal;
+}
 /* Botões */
 .nav-item a {
   display: grid;
@@ -101,8 +110,7 @@ img {
 }
 @media (max-width: 767px) {
   .collapse.navbar-collapse {
-    margin-rigth: -25%;
-    /* Ajustar conforme necessário */
+    margin: auto;
     width: 100%;
   }
 }
@@ -184,15 +192,17 @@ h2 {
 /* Estilo do rodapé */
 footer {
   background-color: #f0f0f0;
-  padding: 18px;
+  padding: 5px;
   text-align: center;
-  position: absolute;
+  position: static;
   bottom: 0;
   width: 100%;
 }
 /* Parágrafos no rodapé */
 footer p {
+  font-family: ;
   margin: 0;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
+  color: #292929;
 }
