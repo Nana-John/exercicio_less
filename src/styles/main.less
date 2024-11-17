@@ -24,8 +24,8 @@
   --primary-bg: hsl(242, 61%, 8%);
   --primary-text: #fc2f70;
   --secondary-text: #ffffff;
-  --button-bg: #fc2f70;
-  --button-hover-bg: #6b6b6b;
+  --button-bg: hsl(242, 61%, 8%);
+  --button-hover-bg: hsl(242, 61%, 8%);
   --button-text: #ffffff;
 }
 
@@ -83,6 +83,7 @@ img {
   align-items: center;
   padding: 20px;
 }
+
 h1 {
   font-family: "BaketFashion-DemoVersion-Regular", sans-serif;
   font-size: 36px;
@@ -122,8 +123,7 @@ header {
 }
 
 .nav-link:hover {
-  background-color: rgb(53, 7, 161);
-  color: rgb(161, 206, 1);
+    color: @corBotaoFundo;
   transform: scale(1.1);
 }
 
